@@ -16,6 +16,7 @@ function compute()
     if(principal.value <= 0 ) {
         alert("Enter a positive number in the Amount field");
         result.innerHTML= "";
+        principal.value = "";
     }
     else {
         //finally we update the result 
@@ -34,7 +35,7 @@ function compute()
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText=rateval+" %";
 }
 
 //Thi functio is used to avoid negative or zero number in the amount field
